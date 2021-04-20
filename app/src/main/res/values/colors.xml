@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FE2B54</color>
+    <color name="purple_500">#FE2B54</color>
+    <color name="purple_700">#FE2B54</color>
+    <color name="teal_200">#FE2B54</color>
+    <color name="teal_700">#FE2B54</color>
+    <color name="black">#17171F</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="stroke">#E4E4E4</color>
+    <color name="status_bar">#DCDDDF</color>
+    <color name="icon">#8F8F91</color>
+    <color name="subtitle">#8A8B90</color>
+    <color name="accent">#FE2B54</color>
+</resources>

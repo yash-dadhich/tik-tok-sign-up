@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/item_button_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/stroke"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:id="@+id/item_button_click_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <ImageView
+                    android:id="@+id/item_button_icon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_android_black_24dp" />
+
+                <TextView
+                    android:id="@+id/item_button_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/item_button_icon"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/tiktok_bold"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="Lorem ipsum"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</merge>

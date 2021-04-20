@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/item_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true">
+
+                    <ImageView
+                        android:id="@+id/item_close"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_baseline_clear_24"
+                        app:tint="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/item_info"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_baseline_help_outline_24"
+                        app:tint="@color/icon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_text_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_head">
+
+                    <TextView
+                        android:id="@+id/item_text_head_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="20dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/tiktok_bold"
+                        android:lines="1"
+                        android:text="Sign up for TikTok"
+                        android:textColor="@color/black"
+                        android:textSize="27sp" />
+
+                    <TextView
+                        android:id="@+id/item_text_head_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/item_text_head_1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/tiktok_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Create a profile, follow other accounts, make your own videos, and more."
+                        android:textColor="@color/subtitle"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_text_head">
+
+                    <com.uigitdev.tiktoksignup.ui.SignUpButton
+                        android:id="@+id/sign_up_phone_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="20dp" />
+
+                    <com.uigitdev.tiktoksignup.ui.SignUpButton
+                        android:id="@+id/sign_up_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sign_up_phone_email"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp" />
+
+                    <com.uigitdev.tiktoksignup.ui.SignUpButton
+                        android:id="@+id/sign_up_google"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sign_up_facebook"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp" />
+
+                    <com.uigitdev.tiktoksignup.ui.SignUpButton
+                        android:id="@+id/sign_up_twitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sign_up_google"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_buttons"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/item_privacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/tiktok_regular"
+                        android:gravity="center"
+                        android:maxLines="4"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        android:textColor="@color/subtitle"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:id="@+id/item_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/item_privacy"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@color/stroke" />
+
+                    <LinearLayout
+                        android:id="@+id/item_log_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/item_divider"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+
+                            <TextView
+                                android:id="@+id/item_bottom_text_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/tiktok_regular"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="Already have an account?"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="0dp">
+
+                            <TextView
+                                android:id="@+id/item_bottom_text_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:lines="1"
+                                android:text="Log in"
+                                android:textColor="@color/accent"
+                                android:textSize="17sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</merge>
